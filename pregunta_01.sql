@@ -18,8 +18,6 @@
 --  >>> Escriba su codigo a partir de este punto <<<
 --
 
-import sqlite3
-
 conn = sqlite3.connect(":memory:")
 cur = conn.cursor()
 
