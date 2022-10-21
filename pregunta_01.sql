@@ -17,6 +17,13 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+
+import sqlite3
+import pandas as pd
+
+conn = sqlite3.connect(":memory:")
+cur = conn.cursor()
+
 cur.execute(
     """SELECT sum(c12)
        FROM tbl1
