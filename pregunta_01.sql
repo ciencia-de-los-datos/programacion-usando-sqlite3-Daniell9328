@@ -18,11 +18,5 @@
 --  >>> Escriba su codigo a partir de este punto <<<
 --
 
-conn = sqlite3.connect(":memory:")
-cur = conn.cursor()
-
-cur.execute(
-    """SELECT sum(c12)
-       FROM tbl1
-    """
-).fetchall()
+SELECT SUM(c12)
+FROM tbl1
